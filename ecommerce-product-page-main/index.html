@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div>
+          <figure class="logo">
+            <img src="./images/logo.svg" alt="" />
+          </figure>
+          <ul class="navlinks">
+            <li><a href="./index.html">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <ul class="cart">
+          <li>
+            <figure class="cart-img">
+              <img src="./images/icon-cart.svg" alt="" />
+            </figure>
+          </li>
+          <li>
+            <figure class="avatar-img">
+              <img src="./images/image-avatar.png" alt="" />
+            </figure>
+          </li>
+        </ul>
+      </nav>
+
+      <section>
+        <div class="display">
+          <figure class="product">
+            <img src="./images/image-product-1.jpg" class="active prd-img" alt="" />
+            <img src="./images/image-product-2.jpg" class="prd-img" alt="" />
+            <img src="./images/image-product-3.jpg" class="prd-img" alt="" />
+            <img src="./images/image-product-4.jpg" class="prd-img" alt="" />
+          </figure>
+          <div class="thumbnail">
+            <figure class="thumbnail-img">
+              <div class="highlight current"></div>
+              <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+            </figure>
+            <figure class="thumbnail-img">
+              <div class="highlight"></div>
+              <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+            </figure>
+            <figure class="thumbnail-img">
+              <div class="highlight"></div>
+              <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+            </figure>
+            <figure class="thumbnail-img">
+              <div class="highlight"></div>
+              <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+            </figure>
+          </div>
+        </div>
+        <div class="price">
+          <h3>SNEAKER COMPANY</h3>
+
+          <h1>Fall Limited Edition Sneakers</h1>
+
+          <p class="des">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+
+          <p class="price-tag">
+            <b>$125.00</b><container>50%</container>
+            <br />
+            <s>$250.00</s>
+          </p>
+          <div class="cart-count">
+            <div class="count">
+              <figure class="minus">
+                <img src="./images/icon-minus.svg" alt="" />
+              </figure>
+              <p>0</p>
+              <figure>
+                <img src="./images/icon-plus.svg" alt="" />
+              </figure>
+            </div>
+            <button class="shop-cart">
+              <i class="ph ph-shopping-cart"></i>Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer> -->
+  <script src="./index.js"></script>
+  </body>
+</html>
