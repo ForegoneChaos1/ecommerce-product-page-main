@@ -56,6 +56,11 @@ nav ul {
 .avatar-img {
   height: 40px;
   width: 40px;
+  border-radius: 25px;
+}
+.avatar-img:hover{
+  border: 3px solid hsl(26, 100%, 55%);
+  transform: scale(1.1);
 }
 .cart figure img {
   height: 100%;
@@ -67,8 +72,9 @@ section {
   /* justify-content: center; */
   gap: 10%;
   /* border: 1px solid red; */
-  width: 900px;
+  width: 100%;
   margin: 60px auto 0 auto;
+  position: relative;
 }
 .product img {
   height: 500px;
@@ -93,6 +99,7 @@ h3 {
   font-size: 10px;
   color: hsl(219, 9%, 45%);
   margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 h1 {
   font-size: 40px;
@@ -102,6 +109,7 @@ h1 {
   font-size: 15px;
   color: hsl(219, 9%, 45%);
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 .price-tag s {
   color: hsl(219, 9%, 45%);
@@ -169,6 +177,13 @@ container {
   margin-right: 10px;
   gap: 30px;
 }
+.count figure {
+  width: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .count p {
   font-weight: 800;
 }
@@ -187,9 +202,6 @@ button img {
   height: 15px;
   fill: black;
 }
-.minus {
-  margin-bottom: 6px;
-}
 
 .prd-img {
   display: none;
@@ -197,11 +209,74 @@ button img {
 .active {
   display: inline;
 }
-@media screen and (max-width: 920px) {
+
+.cart-img{
+  /* border: 2px solid red; */
+  position: relative;
+}
+.cart-img img:hover{
+  color: black;
+}
+.cart-img span{
+  display: none;
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  padding: 1px 7px;
+  border-radius: 25px;
+  font-size: 10px;
+}
+.cart-img .ph-shopping-cart{
+  color: black;
+  font-size: 25px;
+}
+
+.cart-display{
+  box-shadow: 0px 0px 10px 0px hsl(220, 50%, 20%);
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  top: -70px;
+  right: 0px;
+  background-color: white;
+  display: none;
+}
+#cart-title{
+  margin: 18px;
+  font-weight: 800;
+  text-align: left;
+  color: black;
+}
+.cart-display p{
+  text-align: center;
+  margin-top: 50px;
+  color: hsl(219, 9%, 45%);
+}
+@media screen and (max-width: 790px) {
+  .navlinks{
+    display: none;
+  }
+  .logo{
+    margin: 30px 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  main{
+    padding: 0px;
+  }
+  nav{
+    padding: 0 10px;
+  }
   section {
     flex-direction: column;
     gap: 0;
+    width: 100%;
     margin: 0;
+  }
+  .logo{
+    margin: 15px 0;
   }
   .thumbnail {
     display: none;
@@ -211,5 +286,60 @@ button img {
   }
   .navlinks {
     display: none;
+  }
+  .display{
+    width: 100%;
+    height: 280px;
+  }
+  .display figure{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 0; */
+  }
+  .display figure img{
+    border-radius: 0
+  }
+  .price{
+    width: 100%;
+    padding: 15px;
+  }
+  .cart-count{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .count{
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-radius: 10px
+  }
+  button{
+    padding: 15px 10px;
+    color: black;
+  }
+  .price-tag{
+    display: flex;
+    height: 25px;
+    align-items: center;
+    gap: 10px;
+    /* margin: 0; */
+  }
+  .price-tag b{
+    margin: 0;
+  }
+  .price-tag s{
+    margin-left: auto;
+  }
+  .cart-display{
+    top: 0;
+    right: 30px;
+  }
+  h1{
+    font-size: 2px;
+    margin-bottom: 10px;
+  }
+  .des{
+    font-size: 13px;
+    line-height: 1.8;
   }
 }
